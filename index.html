@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anil Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ANIL PORTFOLIO
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a passionate fontend web developer crafting innovative and user-friendly solutions.
+      </p>
+      <a href="#about" class="cta-btn">Explore My Work</a>
+     
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hi, I'm anil varikuppala,I'm a passionate Frontend Web Developer with a strong interest in creating beautiful, responsive websites and web applications. As a beginner in the field, I'm constantly learning new technologies and building projects to sharpen my skills. My goal is to become a full-stack developer and contribute to real-world applications that make a difference.</p>
+        <p>Outside of coding, I enjoy diving into the latest tech innovations and contributing to open-source communities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1">
+          <div class="project-info">
+            <h3>Quiz Application</h3>
+            <p>A dynamic quiz app built with JavaScript, featuring real-time feedback, scoring, and a timer.</p>
+            <a href="youtube" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2">
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <p>A responsive online store with product filtering and a shopping cart, built with React.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3">
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>A productivity app with drag-and-drop task management, built with Vue.js.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Add shadow to nav on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
